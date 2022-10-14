@@ -1,2 +1,2 @@
 # managementProject
-an online shop with add/remove/delete/buy 
+this is 3efrit online web for your management system. hope you like it :)

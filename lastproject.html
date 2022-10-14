@@ -1,47 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
-    <link rel="stylesheet" href="lastproject.css"> 
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Last Men Standing</title>
+    <title>Online Shop</title>
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="lastproject.css">
 </head>
-<h1 class="t1">Welcome to 3EFRIT Online Shop :)</h1>
-
 <body>
-    <input type="text" placeholder="name of the product" class="name">
-    <input onkeyup="totally()" type="number" placeholder="price" id="price">
-    <input type="text" placeholder="quality">
-    <input onkeyup="totally()" type="number" placeholder="quantity" id="quantity">
-    <input onkeyup="totally()" type="number" placeholder="tax" id="tax">
-    <button id="add">Add</button>
-    <button id="rem">Remove </button>
-    <button id="cha">Change</button>
-    <button id="tot">total</button>
+    <div class="crud">
+        <div class="head">
+            <h2>Anya Chan For  </h2>
+            <p>Your Managment System</p>
+        </div>
+        <div class="inputs">
+            <input placeholder="title" type="text" id="title">
+            </div>
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" name="" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" name="" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" name="" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" name="" id="discount" placeholder="discount">
+                <small id="total"></small>
 
+            </div>
+            <input  type="number" name="" id="quantity" placeholder="quantity">
 
+            <button id="submit">Create</button>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script src="lastproject.js"></script>
+<div id="deleteAll"></div>
+<table>
+    <tr>
+        <th>id</th>
+        <th>title</th>
+        <th>price</th>
+        <th>taxes</th>
+        <th>discount</th>
+        <th>Quantity</th>
+        <th>total</th>
+        <th>update</th>
+        <th>delete</th>
+    </tr>
+<tbody id="tbody">
+    </tbody>
+</table>
+</div>
+    <script src="lastproject.js"></script>
 
 </body>
 </html>
