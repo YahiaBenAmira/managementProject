@@ -52,14 +52,12 @@ submit.onclick = function(){
         }
       }
       else{
-
+        dataProduct.push(newProd)
       }
     }
       else{
-        dataProduct[waku] = newProd;
-        system = 'create';
-        submit.innerHTML = 'Create';
-        quantity.style.display = 'block';
+        dataProduct[waku] = newProd; // this gives the value  index of the new product
+        quantity.style.display = 'block'; // this will fill the entire line
       }
     
     
@@ -93,20 +91,19 @@ function showData(){
     var  table = '' // defining an variable with an empty string
     for( var i = 0 ; i < dataProduct.length ; i++ ){ // looping on the length of the product
         
-        table += ` 
+        table +=`
         <tr>
-        <td>${i}</td> 
-        <td>${dataProduct[i].title}</td>
-        <td>${dataProduct[i].price}</td>
-        <td>${dataProduct[i].ads}</td>
-        <td>${dataProduct[i].taxes}</td>
-        <td>${dataProduct[i].discount}</td>
-        <td>${dataProduct[i].quantity}</td>
+        <td>${i}</td>
+        <td><b>${dataProduct[i].title}</b></td>
+        <td><b>${dataProduct[i].price}</b></td>
+        <td><b>${dataProduct[i].ads}</b></td>
+        <td><b>${dataProduct[i].taxes}</b></td>
+        <td><b>${dataProduct[i].discount}</b></td>
+        <td>${dataProduct[i].quantity}</b></td>
         <td><button onclick="updateData(${i})" id="update" >Update</button></td>
         <td><button onclick="deleteData(${i})" id="delete" >Delete</button></td>
         </tr>
         `
-        
     }
 
     document.getElementById('tbody').innerHTML = table

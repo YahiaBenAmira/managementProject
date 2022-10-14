@@ -4,11 +4,13 @@
 }
 
 body{
-    background-image: url(https://cdn.myanimelist.net/s/common/forum/8a44640c-6310-4d98-92ae-d9ed727cf1e0.jpeg);
+    background-image: url(https://cdn.shopify.com/s/files/1/0410/1053/articles/anyatranslation-featuredimage.jpg?v=1653587352);
     background-size: cover; 
     opacity: 85%;
     color: #ffff;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: sans-serif;
+
+
 }
 .crud{
     width: 80%;
@@ -17,7 +19,18 @@ body{
 .head{
     text-align: center;
     text-transform: uppercase;
-    margin: 10px 0;
+    margin: 10px 25px;
+    padding: 2%;
+    font-family: Verdana, sans-serif;
+    word-spacing: 5px;
+    font-size:xx-large;
+    color:white;
+}
+.head span{
+    font-size: xx-large ;
+    font-family:fantasy ;
+    color: #000;
+    letter-spacing: 4px;
 }
 input{
     width: 100%;
@@ -51,19 +64,17 @@ button{
     height: 30px;
     border: none;
     color: #ffff;
-    background: #390053;
+    background: #111;
+    border: 3px solid #F0A500;
     border-radius: 20px;
+    height: 50px;
 }
 button:hover{
-    background: #51025f;
+    background: #ffc400ec;
     letter-spacing: 1px;
 }
-.btnSearch{
-    display: flex;
-    justify-content: space-between;
-}
-.btnSearch button{
-    width: 45%;
+#deleteAll{
+    margin: 20px 0;
 }
 table{
     width: 100%;
@@ -73,7 +84,15 @@ table{
 }
 table th{
     text-transform: uppercase;
+    font-size: larger;
+
 }
 th,td {
     padding: 5px;
+}
+
+#tbody{
+    font-size: large;
+    text-decoration: solid;
+
 }
